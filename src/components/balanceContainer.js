@@ -6,12 +6,10 @@ export default function BalanceContainer(props) {
     const [totalBalance, setTotalBalance] = useState(1);
     const [price, setPrice] = useState(0);
 
-    useEffect(() => {
-        setBalance();
-    }, [props.address, props.confirmed, props.unconfirmed])
+    useEffect(() => {setBalance()}, [props.address, props.confirmed, props.unconfirmed])
+
     const setBalance = async () => {
         let balance = props.confirmed + props.unconfirmed;
-        balance === 0 ? balance++ : balance = balance;
         setTotalBalance(styleBalance(balance));
         getMonetaryValue();
     }

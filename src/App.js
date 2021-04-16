@@ -9,7 +9,7 @@ function App() {
 	let [address, setAddress] = useState('');
 	let [confBalance, setConfBalance] = useState(0);
 	let [unconfBalance, setUnconfBalance] = useState(0);
-	useEffect(() => API(), [address])
+	useEffect(() => API())
 	const API = async () => {
 		let url = 'https://kleverapitest.herokuapp.com/balance/' + address;
 		if (address === '') return;
@@ -35,13 +35,13 @@ function App() {
 			]);
 			setAddress("");
 		}
-		console.log(transactions);
 	}
 	const submit = (e) => {
 		e.preventDefault();
 		let addr = document.getElementById('address').value;
 		setTransactions([]);
 		setAddress(addr);
+		API();
 	}
 	return (
 		<div className={styles.container}>
