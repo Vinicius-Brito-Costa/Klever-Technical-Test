@@ -35,6 +35,7 @@ function App() {
 			]);
 			setAddress("");
 		}
+		console.log(transactions);
 	}
 	const submit = (e) => {
 		e.preventDefault();

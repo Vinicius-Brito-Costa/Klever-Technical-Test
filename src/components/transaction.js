@@ -40,7 +40,7 @@ export default function Transaction(props) {
                     <img src={confirmed.img} alt='' className={styles[confirmed.message]} />
                 </div>
                 <div>
-                    <span>{(props.value).toString().substr(0, 8)}</span> BTC <img className={styles.arrow} src={arrow} alt='' />
+                    <span>{props.value.toString().substr(0, 11)}</span> BTC <img className={styles.arrow} src={arrow} alt='' />
                 </div>
             </header>
 
