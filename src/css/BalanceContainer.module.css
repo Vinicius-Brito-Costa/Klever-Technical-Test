@@ -1,0 +1,34 @@
+.container{
+    width: 100%;
+    border: solid 1px rgba(255, 255, 255, 0.049);
+    border-top: solid 5px rgba(248,196,71,1);
+    border-radius: var(--radius);
+    background: #26284e;
+    padding: 10px;
+    margin: 20px 0;
+}
+.container header h3{
+    color: var(--text-color-highlight2);
+    margin: 0;
+}
+.container header h4{
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container main h1{
+    margin: 5px 0;
+    font-size: 35px;
+}
+.container main h4{
+    color: var(--text-color-highlight);
+    margin: 0 0 20px;
+}
+.container footer{
+    border-top: var(--border-bottom) solid 1px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}

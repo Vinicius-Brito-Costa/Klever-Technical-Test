@@ -1,0 +1,8 @@
+.container{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+.container li div{
+    word-wrap: break-word;
+}

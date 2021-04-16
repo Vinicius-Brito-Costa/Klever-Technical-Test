@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root{
+  --main-color: #0b0b1e;
+  --main-gradient: linear-gradient(130deg, rgba(218,63,140,1) 0%, rgba(146,62,220,1) 100%);
+  --main-gradient-hover: linear-gradient(130deg, rgba(240,69,154,1) 0%, rgba(162,69,245,1) 100%);
+  --text-color-highlight: #9d9dc9;
+  --text-color-highlight2: #c6c8ed;
+  --padding: 10px;
+  --radius: .35rem;
+  --btn-radius: 50px;
+  --confirmed-color: #3dda6f;
+  --unconfirmed-color: #fdb734;
+  --border-bottom: #38383890;
+}
+*{
+  font-family: 'Inter';
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--main-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
